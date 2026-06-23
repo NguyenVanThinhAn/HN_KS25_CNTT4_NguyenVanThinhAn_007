@@ -88,12 +88,7 @@ class LibraryBorrowManager:
     def search_borrow_record(self,keyword):
         count = 0
         for data in self.borrow_records:
-            if (data.book_name.lower()).find(keyword.lower()) >= 0:
-                count += 1
-                self.view_data(data)
-                
-        for data in self.borrow_records:
-            if (data.reader_name.lower()).find(keyword.lower()) >= 0:
+            if ((data.book_name.lower()).find(keyword.lower()) >= 0) or ((data.reader_name.lower()).find(keyword.lower()) >= 0):
                 count += 1
                 self.view_data(data)
 
