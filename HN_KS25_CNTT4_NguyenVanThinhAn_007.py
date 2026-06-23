@@ -105,6 +105,9 @@ class LibraryBorrowManager:
             if (data.reader_name.lower()).find(keyword.lower()) >= 0:
                 count += 1
                 self.view_data(data)
+
+        if not count:
+            print("Không tìm thấy phiếu mượn phù hợp!")
         
 
     def view_data(self,data_view):
@@ -269,7 +272,7 @@ Nhập lựa chọn của bạn: """)
 
                 lib_manager.search_borrow_record(keyword_in)
             case "6":
-                print("Đã thoát!")
+                print("Cảm ơn bạn đã sử dụng hệ thống quản lý thư viện!")
                 break
             case _:
                 print("Lựa chọn không hợp lệ!")
