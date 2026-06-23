@@ -22,7 +22,7 @@ class LibraryBorrow:
             result = "Nặng"
         elif fine >= 50000:
             result = "Trung bình"
-        elif fine >= 0:
+        elif fine > 0:
             result = "Nhẹ"
 
         self.fine_type = result
