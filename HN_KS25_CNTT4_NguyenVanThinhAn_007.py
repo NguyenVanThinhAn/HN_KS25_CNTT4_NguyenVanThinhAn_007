@@ -1,12 +1,3 @@
-# id — Mã phiếu mượn
-# reader_name — Họ tên bạn đọc
-# book_name — Tên sách
-# borrow_days — Số ngày đã mượn
-# late_days — Số ngày trễ hạn
-# fine_per_day — Tiền phạt mỗi ngày trễ
-# total_fine — Tổng tiền phạt
-# fine_type — Phân loại mức phạt
-
 class LibraryBorrow:
     def __init__(self,id,reader_name,book_name,borrow_days,late_days,fine_per_day):
         self.id = id
